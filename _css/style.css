@@ -2,19 +2,33 @@ html,body{
   margin: 0;
   padding: 0;
 }
-  .navbar-nav > .active > a,
-  .navbar-nav > .active > a:hover,
-  .navbar-nav > .active > a:focus {
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
       display: block;
       color: #333333;
       background-color: #ffffff;
       border: 2px rgb(204, 168, 118) solid;
-  }
-  .navbar-toggler{
+}
+.navbar-toggler{
     color: rgb(204, 168, 118);
     //border: 2px rgb(204, 168, 118) solid;
-  }
-
+}
+.brown-button{
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  background: rgb(204, 168, 118);
+  margin: 2rem 1.5rem;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-family: 'Segoe UI';
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+.brown-button:hover{
+  text-decoration: none;
+}
 .menu{
   background-color: #f9f1e5;
   border-bottom: 2px rgb(204, 168, 118) solid;
@@ -131,17 +145,6 @@ html,body{
   font-size: 0.75rem;
   font-weight: 300;
   text-align: left;
-}
-.vopros-button{
-  display: inline-block;
-  padding: 0.5rem 2rem;
-  background: rgb(204, 168, 118);
-  margin: 2rem 1.5rem;
-  color: #ffffff !important;
-  text-decoration: none;
-}
-.vopros-button:hover{
-  text-decoration: none;
 }
 .voprosy li:after{
   content: '';
