@@ -1,6 +1,23 @@
-html,body{}
-.bg-menu{
+html,body{
+  margin: 0;
+  padding: 0;
+}
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover,
+  .navbar-nav > .active > a:focus {
+      display: block;
+      color: #333333;
+      background-color: #ffffff;
+      border: 2px rgb(204, 168, 118) solid;
+  }
+  .navbar-toggler{
+    color: rgb(204, 168, 118);
+    //border: 2px rgb(204, 168, 118) solid;
+  }
+
+.menu{
   background-color: #f9f1e5;
+  border-bottom: 2px rgb(204, 168, 118) solid;
 }
 .menu-item{
   color: #333333;
@@ -49,13 +66,181 @@ html,body{}
   margin-bottom: 0;
   font-size: 1.12rem;
 }
-.uslugi{
+.uslugi,.voprosy, .voprosy-lastrow,.preferences,.vs{
   background: #f9f1e5;
+  font-family: 'Segoe UI';
+  font-size: 0.875rem;
+  font-weight: 300;
 }
-.uslugi h2{
+.uslugi h2, .voprosy h2, .voprosy-lastrow h2,.preferences h2,.vs h2{
   font-family: 'Times New Roman';
   color: #333333;
   font-size: 2.25rem;
   font-weight: 700;;
   text-align: center;
+}
+.uslugi h3, .voprosy h3, .voprosy-lastrow h3{
+  font-family: 'Times New Roman';
+  color: #333333;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1.56rem;
+}
+.uslugi-button{
+  display: block;
+  padding: 0.5rem 0;
+  background: rgb(204, 168, 118);
+  margin: 2rem 1.5rem;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.uslugi-button:hover{
+  text-decoration: none;
+}
+.lentavoprosov,.onas,.novosti{
+  background: rgb(235, 228, 218);
+
+}
+.lentavoprosov h2, .onas h2, .novosti h2{
+  font-family: 'Times New Roman';
+  color: #333333;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+.lentavoprosov p{
+  font-family: Arial;
+  color: #2b2f40;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: left;
+}
+.lentavoprosov p strong{
+  display: block;
+  font-family: 'Segoe UI';
+  color: #2b2f40;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: left;
+}
+.lentavoprosov p span{
+  font-family: 'Segoe UI';
+  color: #2b2f40;
+  font-size: 0.75rem;
+  font-weight: 300;
+  text-align: left;
+}
+.vopros-button{
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  background: rgb(204, 168, 118);
+  margin: 2rem 1.5rem;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.vopros-button:hover{
+  text-decoration: none;
+}
+.voprosy li:after{
+  content: '';
+  width: 90%;
+  height: 1px;
+  background: rgb(228,222,212);
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+.voprosy-lastrow li:after{
+  content: '';
+  background: none;
+}
+.onas li{
+  font-family: 'Segoe UI';
+  color: #333333;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.667;
+  text-align: left;
+}
+.preferences li {
+  border-right: 1px rgb(228,222,212) solid;
+}
+.preferences li:last-child{
+  border: none;
+}
+.preferences li span{
+  display: block;
+  font-family: 'Times New Roman';
+  color: #cca876;
+  font-size: 4.813rem;
+  font-weight: 700;
+  line-height: 0.234;
+  margin-bottom: 2rem;
+}
+.preferences li{
+  display: block;
+  font-family: 'Segoe UI';
+  color: #333333;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+}
+.preferences li strong{
+  display: block;
+  font-family: 'Segoe UI';
+  color: #333333;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+}
+.novosti li{
+  font-family: 'Segoe UI';
+  color: #333333;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+.novosti h4{
+  font-family: 'Times New Roman';
+  color:#333333;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left
+}
+.novosti strong{
+  display: block;
+  font-family: 'Times New Roman';
+  color: #333333;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.286;
+}
+.vs h4{
+  font-family: 'Times New Roman';
+  color: #333333;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+}
+.vs p{
+  font-family: 'Segoe UI';
+  color: #333333;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.286;
+  text-align: left;
+}
+footer{
+  background: rgb(48, 48, 48);
+  font-family: 'Segoe UI';
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.714;
+  text-align: left;
 }
